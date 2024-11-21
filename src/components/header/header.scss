@@ -107,7 +107,7 @@
 }
 input {
   background-color: unset;
-  font-size: 26px;
+  font-size: 22px;
   outline: none;
   border: none;
   font-weight: 100;
@@ -150,14 +150,14 @@ input {
 }
 
 .item_text {
-  display: flex;
+  display: block;
   align-items: center;
   padding: 7px 25px;
   width: fit-content;
   border-radius: 15px 15px 15px 0;
   background-color: #c4bfff;
   justify-self: start;
-  
+
 }
 
 .messaAbdullo{
@@ -165,7 +165,17 @@ input {
   justify-self: end;
   border-radius: 15px 15px 0 15px;
 }
+@include media(1632){
+  .input-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-box1{
+    display: flex;
+    justify-content: space-between;
+  }
 
+}
 /* Media qo'llash */
 @include media(1440) {
   .header__main-box {
@@ -176,6 +186,12 @@ input {
     max-width: 350px;
     height: 760px;
   }
+ .input-box,
+ .input-box1{
+  display: flex;
+  justify-content: space-between;
+  
+ }
 }
 
 @include media(1024) {
